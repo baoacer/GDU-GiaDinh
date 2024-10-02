@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=AddUIConsoleOutput
+comment1.params=uiInput
+comment1.target=AddUIConsoleOutput(AddUIConsoleInput)
+comment2.params=
+comment2.target=AddUIConsoleOutput()
+comment3.params=response
+comment3.target=void\ present(IResponseData)
+comment4.params=response
+comment4.target=void\ error(IResponseData)
+comment5.params=input
+comment5.target=void\ setAddUIConsoleInput(AddUIConsoleInput)
+numComments=6

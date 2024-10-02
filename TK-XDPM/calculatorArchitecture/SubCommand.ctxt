@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=SubCommand
+comment1.params=request\ subEntity
+comment1.target=SubCommand(IRequestData,\ SubEntity)
+comment2.params=
+comment2.target=void\ execute()
+numComments=3

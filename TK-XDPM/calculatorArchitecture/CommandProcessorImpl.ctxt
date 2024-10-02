@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=CommandProcessorImpl
+comment1.params=command
+comment1.target=void\ executeCommand(Command)
+numComments=2

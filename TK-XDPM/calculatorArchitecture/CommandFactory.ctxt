@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=CommandFactory
+comment1.params=addEntity\ subEntity\ mulEntity\ divEntity
+comment1.target=CommandFactory(AddEntity,\ SubEntity,\ MulEntity,\ DivEntity)
+comment2.params=commandType\ request
+comment2.target=Command\ createCommand(java.lang.String,\ IRequestData)
+numComments=3

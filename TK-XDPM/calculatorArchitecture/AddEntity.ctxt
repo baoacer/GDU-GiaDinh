@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=AddEntity
+comment1.params=requestData
+comment1.target=double\ add(IRequestData)
+numComments=2

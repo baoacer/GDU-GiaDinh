@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=IRequestData
+comment1.params=number1
+comment1.target=void\ setNumber1(java.lang.String)
+comment2.params=number2
+comment2.target=void\ setNumber2(java.lang.String)
+comment3.params=operation
+comment3.target=void\ setOperation(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getNumber1()
+comment5.params=
+comment5.target=java.lang.String\ getNumber2()
+comment6.params=
+comment6.target=java.lang.String\ getOperation()
+numComments=7

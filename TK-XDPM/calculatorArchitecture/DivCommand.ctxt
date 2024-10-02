@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=DivCommand
+comment1.params=request\ divEntity
+comment1.target=DivCommand(IRequestData,\ DivEntity)
+comment2.params=
+comment2.target=void\ execute()
+numComments=3

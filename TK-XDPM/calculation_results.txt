@@ -1,4 +1,0 @@
-Calculated result: 11.0
-Calculated result: -1.0
-Calculated result: 18.0
-Calculated result: 2.0

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="162.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Button layoutX="171.0" layoutY="19.0" mnemonicParsing="false" onAction="#hienThiGio" prefHeight="43.0" prefWidth="98.0" text="Giờ Hiện Tại" textAlignment="CENTER" textFill="#d218df">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textFieldGio" layoutX="104.0" layoutY="81.0" prefHeight="50.0" prefWidth="231.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

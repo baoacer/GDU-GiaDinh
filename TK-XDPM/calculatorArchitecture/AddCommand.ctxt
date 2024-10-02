@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=AddCommand
+comment1.params=request\ addEntity
+comment1.target=AddCommand(IRequestData,\ AddEntity)
+comment2.params=
+comment2.target=void\ execute()
+numComments=3
