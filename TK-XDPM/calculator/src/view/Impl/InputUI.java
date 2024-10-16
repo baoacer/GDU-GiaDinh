@@ -1,24 +1,23 @@
 package view.Impl;
 
-import dtos.IRequestData;
-import view.IInput;
+import dtos.RequestData;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class UIInputImpl extends JFrame {
-    private IInput IInput;
-    private IRequestData request;
+public class InputBoundary extends JFrame {
+    private InputBoundary InputBoundary;
+    private RequestData request;
 
     // Các thành phần giao diện
     private JTextField number1Field;
     private JTextField number2Field;
     private JTextArea resultArea;
 
-    public UIInputImpl(IInput IInput, IRequestData request) {
-        this.IInput = IInput;
+    public InputBoundary(InputBoundary IInputBoundary, RequestData request) {
+        this.InputBoundary = IInputBoundary;
         this.request = request;
         initComponents();  // Khởi tạo các thành phần giao diện
     }
@@ -101,7 +100,7 @@ public class UIInputImpl extends JFrame {
         request.setNumber2(number2);
         request.setOperation(operation);
 
-        IInput.execute(request);
+        IInputBoundary.execute(request);
     }
 
     // Hiển thị kết quả hoặc lỗi lên giao diện

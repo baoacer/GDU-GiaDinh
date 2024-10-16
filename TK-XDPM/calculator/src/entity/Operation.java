@@ -1,0 +1,13 @@
+package entity;
+
+public abstract class MathOperation {
+    protected double number1;
+    protected double number2;
+
+    public MathOperation(double number1, double number2) {
+        this.number1 = number1;
+        this.number2 = number2;
+    }
+
+    public abstract double operation();
+}
