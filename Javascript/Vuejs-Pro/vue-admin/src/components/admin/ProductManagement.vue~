@@ -1,0 +1,211 @@
+<template>
+  <div class="container">
+    <h2>Quản lý sản phẩm</h2>
+    <button class="btn-add-product" type="submit">Thêm sản phẩm</button>
+    <form @submit.prevent="addProduct">
+      <table class="product-table">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tên Sản Phẩm</th>
+          <th>Hành Động</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="product in products" :key="product.id">
+          <td class="product-id">{{ product.ProductID }}</td>
+          <td class="product-name">{{ product.ProductName }}</td>
+          <td class="product-action">
+            <button class="action-edit" @click="editProduct(product)">Sửa</button>
+            <button class="action-remove" @click="deleteProduct(product.id)">Xóa</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+
+
+</template>
+
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      products: [],
+      newProduct: {
+        name: '',
+        price: '',
+      },
+    };
+  },
+  mounted() {
+    this.fetchProducts();
+  },
+  methods: {
+    async fetchProducts() {
+      const response = await axios.get('http://localhost:2999/api/products');
+      this.products = response.data;
+      console.log(this.products);
+    },
+    async addProduct() {
+      const token = localStorage.getItem('accessToken');
+      await axios.post('http://localhost:2999/api/products', this.newProduct, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      this.newProduct.name = '';
+      this.newProduct.price = '';
+      await this.fetchProducts();
+    },
+    async editProduct(product) {
+      const newName = prompt('Nhập tên sản phẩm mới:', product.name);
+      const newPrice = prompt('Nhập giá sản phẩm mới:', product.price);
+      if (newName && newPrice) {
+        const token = localStorage.getItem('accessToken');
+        await axios.put(`http://localhost:2999/api/products/${product.id}`, {
+          name: newName,
+          price: newPrice,
+        }, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+        await this.fetchProducts();
+      }
+    },
+    async deleteProduct(productId) {
+      const token = localStorage.getItem('accessToken');
+      await axios.delete(`http://localhost:2999/api/products/${productId}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      await this.fetchProducts();
+    },
+  },
+};
+</script>
+
+
+
+<style scoped>
+
+.form-add{
+  margin-bottom: 10px;
+}
+
+.btn-add-product{
+  padding: 5px;
+  border-radius: 6px;
+  border: 3px solid #E65A30;
+  width: 150px;
+  margin-bottom: 10px;
+  background: #E65A30;
+}
+
+.input-product-name{
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  width: 285px;
+}
+
+.input-product-price{
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  width: 150px;
+  margin: 0 10px;
+}
+
+.product-name{
+  text-align: left;
+}
+
+.product-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  width: 25%;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.product-management {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-management h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.product-management form {
+  margin-bottom: 20px;
+}
+
+.product-management input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.product-management button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-management button:hover {
+  background-color: #0056b3;
+}
+
+.product-management ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-management li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-management li button {
+  background-color: #dc3545;
+}
+
+.product-management li button:hover {
+  background-color: #c82333;
+}
+</style>

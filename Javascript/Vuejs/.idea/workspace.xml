@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="94990457-358f-4a2b-b1b0-fb745fa53939" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/image/icon/online-shopping.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/image/luc_tra_hoang_kim_4b2ef28d7cc04db0a47c0587e05f8963_large.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/image/oolong_tanbei_latte_61e58f8d2b144fa1976d3b78504248b6_large.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/image/tra_hai_than_latte_d71f90e78c38459c9d0bcacc6063c1b9_large.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/image/ts_comebuy_cf2fd6cf2b364ee491596767618ca054_large.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/image/ts_hai_than_66599a9e451c47a9a637b41d0289d21c_large.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/image/ts_hoa_hong_2f70697d2f184df89a183976680f9ea3_large.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/image/ts_hong_kong_ea8bda8a4b874fc5a118c8170f683915_large.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/image/ts_mat_ong_09df102f64f74405bf0a495dd8bb073d_large.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/image/ts_mat_ong_b133c021324548d0ad3dc1b87524897f_large.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/image/ts_signature_da473adc7fcc4d1d8c4d6378adc1f114_large.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/image/ts_suong_sao_c5f9f21a549543f89ec8fa2a74885b41_large.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/image/ts_tran_chau_052aed385e41470db7cec46eddfcfdbb_large.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/ComCart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/ComHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/ComHome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/ComOrderHistory.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/ComProduct.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/ComProductDetail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/ComUserDetail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/admin/ComAdmin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/admin/OrderManagement.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/admin/ProductManagement.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/admin/UserManagement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/AuthWrapper.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/ComLogin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/ComLogin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/ComSignup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/ComSignup.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/router/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2oWZcjbupIQ8ViNoYRM7zPwkIQl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Acer/Documents/workspace/GDU-GiaDinh/Javascript/Vuejs/vue-admin/src/assets/image&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.serve (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.serve.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\Documents\workspace\GDU-GiaDinh\Javascript\Vuejs\vue-admin\src\assets\image" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\Documents\workspace\GDU-GiaDinh\Javascript\Vuejs\vue-admin\src\components\admin" />
+      <recent name="C:\Users\Acer\Documents\workspace\GDU-GiaDinh\Javascript\Vuejs\vue-admin\src\assets\image" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.serve">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/vue-admin/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/vue-admin/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serve" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="94990457-358f-4a2b-b1b0-fb745fa53939" name="Changes" comment="" />
+      <created>1730987376671</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730987376671</updated>
+      <workItem from="1730987379798" duration="1432000" />
+      <workItem from="1731039770617" duration="12021000" />
+      <workItem from="1731068624075" duration="4748000" />
+      <workItem from="1731138096492" duration="151000" />
+      <workItem from="1731306182428" duration="10968000" />
+      <workItem from="1731329694151" duration="5025000" />
+      <workItem from="1731344963194" duration="171000" />
+      <workItem from="1731392847234" duration="10135000" />
+      <workItem from="1731572458746" duration="3557000" />
+      <workItem from="1731747428966" duration="443000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

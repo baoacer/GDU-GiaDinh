@@ -1,0 +1,20 @@
+package application;
+	
+import javafx.application.Application;
+import javafx.stage.Stage;
+import xepSo.GiaoDien;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+
+
+public class KiemThu extends Application {
+	@Override
+	public void start(Stage primaryStage) {
+		GiaoDien giaoDien = new GiaoDien(primaryStage);
+		giaoDien.hienThi();
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}

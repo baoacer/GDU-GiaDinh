@@ -1,0 +1,79 @@
+<template>
+  <div class="register">
+    <h2>Đăng Ký Tài Khoản</h2>
+    <form @submit.prevent="handleRegister">
+      <div class="form-group">
+        <label for="username">Tên người dùng:</label>
+        <input type="text" id="username" v-model="username" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" v-model="email" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" v-model="password" required />
+      </div>
+      <button type="submit">Đăng Ký</button>
+    </form>
+    <p>Đã có tài khoản? <router-link to="/login">Đăng Nhập</router-link></p>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      username: '',
+      email: '',
+      password: ''
+    };
+  },
+  methods: {
+    async handleRegister() {
+      try {
+        // Gửi yêu cầu đăng ký tới API
+        const response = await fetch('/api/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            username: this.username,
+            email: this.email,
+            password: this.password
+          })
+        });
+        const data = await response.json();
+
+        if (response.ok) {
+          // Đăng ký thành công
+          alert('Đăng ký thành công! Vui lòng đăng nhập.');
+          this.$router.push('/login');
+        } else {
+          // Xử lý lỗi
+          alert(data.message);
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('Đã xảy ra lỗi. Vui lòng thử lại.');
+      }
+    }
+  }
+};
+</script>
+
+<style scoped>
+.register {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+}
+</style>

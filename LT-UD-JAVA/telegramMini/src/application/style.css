@@ -1,0 +1,71 @@
+
+.root {
+    -fx-font-family: 'Arial';
+}
+
+/* background */
+.nav{
+	-fx-background-color: #212121 !important;
+}
+
+/* shadow */
+.shadow-pane {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.5, 0, 1);
+    -fx-background-color: white; 
+}
+
+.shadow-name {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 0, 0, 0, 0);
+    -fx-background-color: white; 
+}
+
+/* text field */
+
+.txt-receive{
+	-fx-background-color: #212121;
+	-fx-background-radius: 20px;
+	-fx-text-fill: #E8E8E8;
+}
+
+.txt-send{
+	-fx-background-radius: 20px;
+	-fx-background-color: #8774E1;
+	-fx-text-fill: #FCFCFF;
+}	
+
+
+/* chat */
+.main-chat {
+    -fx-background-image: url("file:///C:/Users/Acer/Documents/workspace/GDU-GiaDinh/LT-UD-JAVA/telegramMini/src/image/tele-bg.jpg"); /* Đường dẫn đến hình ảnh */
+    -fx-background-size: cover; /* Điều chỉnh kích thước hình ảnh để bao phủ toàn bộ Pane */
+    -fx-background-position: center; /* Đặt hình ảnh ở giữa */
+}
+
+.enter-chat{
+	-fx-background-color: #212121;
+	-fx-background-radius: 20px;
+}
+
+
+.white-color{
+	-fx-text-fill: white;
+}
+
+.search-icon {
+	-fx-border-color: #D5D6F2;
+	-fx-border-width: 0px 2px 0x 0px;
+}  
+
+.notion-count{
+	-fx-background-color: red;
+	-fx-background-radius: 100%	
+}
+
+.is-online{
+	-fx-background-color: green;
+	-fx-background-radius: 100%;
+}
+
+.is-offline{
+	-fx-background-color: transparent;
+}

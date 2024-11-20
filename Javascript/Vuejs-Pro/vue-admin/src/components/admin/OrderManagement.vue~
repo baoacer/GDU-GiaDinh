@@ -1,0 +1,90 @@
+<template>
+  <div>
+    <h2>Quản lý đơn hàng</h2>
+    <h3>Danh sách đơn hàng</h3>
+    <ul>
+      <li v-for="order in orders" :key="order.id">
+        Đơn hàng #{{ order.id }} - Trạng thái: {{ order.status }}
+        <button @click="updateOrderStatus(order.id, 'confirmed')">Xác nhận thanh toán</button>
+        <button @click="updateOrderStatus(order.id, 'shipped')">Đã giao hàng</button>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      orders: [],
+    };
+  },
+  mounted() {
+    this.fetchOrders();
+  },
+  methods: {
+    async fetchOrders() {
+      const token = localStorage.getItem('accessToken');
+      const response = await axios.get('http://localhost:2999/api/orders', {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      this.orders = response.data;
+    },
+    async updateOrderStatus(orderId, status) {
+      const token = localStorage.getItem('accessToken');
+      await axios.put(`http://localhost:2999/api/orders/${orderId}`, { status }, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      await this.fetchOrders();
+    },
+  },
+};
+</script>
+
+<style scoped>
+.order-management {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-management h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.order-management ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-management li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-management li button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.order-management li button:hover {
+  background-color: #218838;
+}
+</style>
